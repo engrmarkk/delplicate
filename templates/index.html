@@ -10,6 +10,7 @@
     action="/"
     enctype="multipart/form-data"
     class="d-flex flex-column align-items-center justify-content-center"
+    id="upload-form"
   >
     <div style="height: 0px; overflow: hidden">
       <input type="file" id="fileInput" name="fileInput" />
@@ -21,8 +22,18 @@
         onclick="chooseFile();"
       ></i>
     </div>
-    <input type="submit" value="Upload" class="btn btn-success mt-3" />
+    <input type="submit" value="Upload" class="btn btn-success mt-3" style="display: none;"/>
   </form>
 </section>
+
+<script>
+  function chooseFile() {
+    document.getElementById("fileInput").click();
+  }
+
+  document.getElementById("fileInput").addEventListener("change", function() {
+      document.getElementById("upload-form").submit();
+  });
+</script>
 
 {% endblock content %}
