@@ -4,7 +4,8 @@
   class="d-flex flex-column m-auto align-items-center justify-content-center"
   style="height: 90vh;"
 >
-  <h3 class="text-muted text-center">UPLOAD A SAMPLE</h3>
+<section style="border: 2px dashed rgb(146, 142, 142);" class="p-5">
+  <h4 class="text-muted text-center">UPLOAD A SAMPLE</h4>
   <form
     method="post"
     action="/"
@@ -17,13 +18,14 @@
     </div>
     <div>
       <i
-        class="fa fa-cloud-download text-primary"
-        style="font-size: 12rem"
+        class="fa fa-cloud-download text-info"
+        style="font-size: 10rem; cursor: pointer;"
         onclick="chooseFile();"
       ></i>
     </div>
     <input type="submit" value="Upload" class="btn btn-success mt-3" style="display: none;"/>
   </form>
+</section>
 </section>
 
 <script>
