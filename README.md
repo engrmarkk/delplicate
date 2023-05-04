@@ -1,1 +1,3 @@
 # delplicate
+
+"Delplicate" is coined from the word "Delete Duplicate", it is a software project designed to streamline the process of removing duplicate images from a user's gallery. The project involves developing an algorithm that can quickly scan through all images in the gallery and identify duplicate images based on a variety of criteria, such as file size, image dimensions, and pixel content. Once identified, the algorithm will allow the user to review and select which images they want to keep or delete. This project aims to help users optimize storage space on their devices and improve their overall gallery organization.
